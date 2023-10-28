@@ -1,0 +1,137 @@
+body {
+    background-color: #edeef0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    background-color: #507299;
+    position: relative;
+    padding: 10px;
+}
+
+    header img {
+        position: relative;
+        left: 10%;
+    }
+
+.main {
+    display: flex;
+    min-height: 800px;
+    padding-bottom: 30px;
+    justify-content: center;
+    font-family: Verdana;
+}
+
+.leftc {
+    text-align: left;
+    color: #507299;
+    flex: 0 0 200px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+    .leftc a {
+        padding: 10px;
+        display: block;
+    }
+
+        .leftc a:hover {
+            background-color: #d0d0d0;
+        }
+
+.contentc div {
+    text-align: justify;
+    background-color: white;
+    width: 400px;
+    min-height: 300px;
+    padding: 20px;
+    margin: 15px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid #e1e5eb;
+}
+
+.contentc div::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+.contentFooter {
+    border-top: 3px solid #d0d0d0;
+    color: #507299;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.contentHeader {
+    border-bottom: 3px solid #d0d0d0;
+    margin: 5px -20px;
+    padding: 0px 0px 10px 20px;
+    font-weight: 800;
+}
+
+.right {
+    position: fixed;
+    right: 15%;
+}
+
+.right div {
+    background-color: white;
+    width: 130px;
+    min-height: 150px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid #e1e5eb;
+}
+
+    .right p {
+        margin: 15px 0px;
+        background-color: #e1e5eb;
+    }
+
+.right h4 {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+
+footer {
+    background-color: white;
+    text-align: center;
+    color: slategray;
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .leftc {
+        flex: 50px 0 0;
+        display: inline-block;
+        text-align: center;
+    }
+
+        .leftc a {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1500px) {
+    .right {
+        display: none;
+    }
+}
